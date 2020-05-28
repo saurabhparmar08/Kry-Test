@@ -37,7 +37,7 @@ public class TestMainVerticle {
                 .send(response -> testContext.verify(() -> {
                     assertEquals(200, response.result().statusCode());
                     JsonArray body = response.result().bodyAsJsonArray();
-                    assertTrue(body.size() > 1);
+                    assertTrue(body.size() > 0);
                     testContext.completeNow();
                 }));
     }
