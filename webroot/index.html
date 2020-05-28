@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to KRY</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="static/app.css"/>
+</head>
+<body>
+<b>KRY status poller</b>
+<br>
+<br>
+<div>
+    <legend>Add a new service:
+        <br>
+        <br>
+        <label>Service name: </label><input type="text" id="url-name" placeholder="service name">
+        <label>Service url: </label><input type="text" id="url" placeholder="service url">
+        <button id="post-service">Save</button>
+    </legend>
+</div>
+<br>
+<div class="tab">
+    <sub class="note">double click on row to update and right click to delete a service</sub>
+</div>
+<div class="list">
+    <label>Services:</label><br>
+    <ul id="service-list">
+    </ul>
+</div>
+
+
+</body>
+<script src="static/code.js">
+</script>
+</html>
